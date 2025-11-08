@@ -1,11 +1,26 @@
 {
   "version": 2,
   "builds": [
-    { "src": "BACKEND/server.js", "use": "@vercel/node" },
-    { "src": "FRONTEND/package.json", "use": "@vercel/static-build" }
+    {
+      "src": "BACKEND/server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "FRONTEND/package.json",
+      "use": "@vercel/vite"
+    }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "BACKEND/server.js" },
-    { "src": "/(.*)", "dest": "FRONTEND/$1" }
+    {
+      "src": "/api/(.*)",
+      "dest": "BACKEND/server.js"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "FRONTEND/dist/$1"
+    }
   ]
 }
