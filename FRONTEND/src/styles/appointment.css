@@ -1,0 +1,50 @@
+/* appointment.css */
+.appointment-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 40px;
+}
+
+.appointment-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.appointment-card:hover {
+  transform: translateY(-4px);
+}
+
+.appointment-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.doctor-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.status-icon {
+  font-size: 24px;
+}
+
+.appointment-card-body {
+  padding: 0 20px 20px;
+}
+
+.appointment-card-body h3 {
+  margin: 0 0 10px;
+}
+
+.appointment-card-body p {
+  margin: 6px 0;
+  font-size: 14px;
+}

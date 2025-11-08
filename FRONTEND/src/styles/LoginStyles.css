@@ -1,0 +1,84 @@
+.login-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  width: 100vw;
+  height: 120vh;
+  top: 0;
+  bottom: 0;
+  background-image: url('https://st2.depositphotos.com/36924814/46071/i/450/depositphotos_460713580-stock-photo-medical-health-blue-cross-neon.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  object-fit: cover;
+}
+  .form-container {
+    padding: 20px;
+    margin: 50px auto; 
+    max-width: 400px; 
+    max-height: 550px;
+    z-index: 1;
+    
+  }
+  
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: orange;
+    border-radius: 10px;
+
+  }
+  
+ 
+  .register-form label {
+    font-weight: bold;
+  }
+  
+ 
+  .register-form input {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  
+  .register-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; 
+    color: #fff; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-form button:hover {
+    background-color: #0056b3; 
+  }
+  
+  .link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .link a {
+    color: #007bff; 
+    text-decoration: none;
+  }
+  
+  .link a:hover {
+    text-decoration: underline;
+  }
+  .spin-container {
+      display: grid;
+      place-items: center;
+      height: 100vh;
+  }
+  
+  

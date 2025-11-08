@@ -1,0 +1,17 @@
+{
+  "name": "doctor-appointment-system",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "FRONTEND",
+    "BACKEND"
+  ],
+  "scripts": {
+    "build": "cd FRONTEND && npm run build",
+    "start": "cd BACKEND && node server.js",
+    "dev": "concurrently \"cd FRONTEND && npm run dev\" \"cd BACKEND && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

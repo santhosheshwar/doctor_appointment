@@ -1,0 +1,99 @@
+.doctor-card {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.doctor-card-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.doctor-card-content {
+  flex: 1;
+  margin-left: 24px;
+}
+
+.doctor-card-content h2 {
+  margin: 0;
+}
+
+.doctor-card-content p {
+  margin: 4px 0;
+}
+
+.verified-icon {
+  color: #007bff;
+}
+
+.consultation-types span {
+  margin-right: 12px;
+  color: #00bfff;
+}
+
+.doctor-card-actions {
+  margin-top: 12px;
+}
+
+.doctor-card-actions .ant-btn {
+  margin-right: 8px;
+}
+
+.doctor-details-modal img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 16px;
+  object-fit: cover;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  margin: 16px auto;
+  max-width: 800px;
+  justify-content: center;
+}
+
+.filter-bar select,
+.filter-bar input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-bar button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+}
+.doctor-details-modal {
+  text-align: center;
+}
+
+.modal-doctor-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.about-section {
+  background: #f7f7f7;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 6px;
+}
+
+

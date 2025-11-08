@@ -1,0 +1,23 @@
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+.register-form {
+  border: 1px solid gray;
+  padding: 30px;
+}
+.background-image {
+  position: absolute;
+  width: 100vw;
+  height: 120vh;
+  top: 0;
+  bottom: 0;
+  background-image: url('https://st2.depositphotos.com/36924814/46071/i/450/depositphotos_460713580-stock-photo-medical-health-blue-cross-neon.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  object-fit: cover;
+}
