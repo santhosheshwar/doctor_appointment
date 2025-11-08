@@ -1,26 +1,16 @@
 {
   "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "FRONTEND/dist",
+  "installCommand": "npm install",
   "builds": [
     {
       "src": "BACKEND/server.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "FRONTEND/package.json",
-      "use": "@vercel/vite"
     }
   ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "BACKEND/server.js"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "FRONTEND/dist/$1"
-    }
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/BACKEND/server.js" },
+    { "source": "/(.*)", "destination": "/" }
   ]
 }

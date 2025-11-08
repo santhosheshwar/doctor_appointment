@@ -2,14 +2,15 @@
   "name": "doctor-appointment-system",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
-    "install-frontend": "cd FRONTEND && npm install",
-    "install-backend": "cd BACKEND && npm install",
-    "build-frontend": "cd FRONTEND && npm run build",
-    "postinstall": "npm run install-frontend && npm run install-backend",
-    "build": "npm run build-frontend",
+    "postinstall": "cd FRONTEND && npm install && cd ../BACKEND && npm install",
+    "build": "cd FRONTEND && npm run build",
     "start": "cd BACKEND && node server.js",
-    "dev": "concurrently \"cd FRONTEND && npm run dev\" \"cd BACKEND && npm run dev\""
+    "dev": "concurrently \"cd FRONTEND && npm run dev\" \"cd BACKEND && npm run dev\"",
+    "vercel-build": "cd FRONTEND && npm install && npm run build && cd ../BACKEND && npm install"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
